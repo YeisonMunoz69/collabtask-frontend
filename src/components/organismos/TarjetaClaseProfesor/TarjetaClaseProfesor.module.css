@@ -1,0 +1,75 @@
+/* Estilos principales para la tarjeta */
+.tarjeta {
+  width: auto; /* El ancho de la tarjeta se ajustará automáticamente según el contenido */
+  height: auto; /* La altura de la tarjeta se ajustará automáticamente según el contenido */
+  border-radius: 8px; /* Bordes redondeados con un radio de 8px */
+  border: 1px #4b5563 solid; /* Borde de 1px de color gris oscuro */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra suave para la tarjeta */
+  flex-direction: column; /* Los elementos hijos se organizarán en una columna */
+  justify-content: flex-start; /* Alinea los elementos hijos al inicio del contenedor */
+  align-items: flex-end; /* Alinea los elementos hijos al final del contenedor */
+  gap: 20px; /* Espacio de 20px entre los elementos hijos */
+  cursor: default; /* El cursor será por defecto (no interactivo) */
+  margin: 20px 0px 0px 20px; /* Margen externo de 20px arriba y a la izquierda */
+  display: inline-flex; /* Utiliza flexbox para organizar los hijos en línea */
+}
+
+/* Estilo para el estado hover de la tarjeta */
+.tarjeta:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Aumenta el tamaño y opacidad de la sombra al pasar el cursor */
+}
+
+/* Estilos para la cabecera de la tarjeta */
+.header {
+  align-self: stretch; /* Hace que el header ocupe todo el ancho del contenedor */
+  height: 112px; /* Altura de la cabecera */
+  width: auto; /* El ancho de la cabecera se ajusta automáticamente */
+  padding: 12px; /* Padding de 12px alrededor del contenido */
+  background: #374151; /* Fondo oscuro para la cabecera */
+  border-top-left-radius: 8px; /* Bordes redondeados en la esquina superior izquierda */
+  border-top-right-radius: 8px; /* Bordes redondeados en la esquina superior derecha */
+  flex-direction: column; /* Los elementos dentro de la cabecera se organizarán en columna */
+  justify-content: center; /* Alinea los elementos hijos en el centro verticalmente */
+  align-items: flex-start; /* Alinea los elementos hijos al principio del contenedor */
+  gap: 10px; /* Espacio de 10px entre los elementos dentro de la cabecera */
+  display: flex; /* Utiliza flexbox para organizar los elementos */
+}
+
+/* Estilos para el contenido dentro del header */
+.headerContent {
+  justify-content: center; /* Alinea los elementos hijos al centro en el eje principal */
+  align-items: center; /* Alinea los elementos hijos al centro en el eje transversal */
+  gap: 10px; /* Espacio de 10px entre los elementos dentro del header */
+  display: inline-flex; /* Utiliza flexbox en línea para alinear los hijos */
+}
+
+/* Estilos para el subtítulo dentro del header */
+.headerSubtitle {
+  color: white; /* Color blanco para el texto */
+  font-size: 14px; /* Tamaño de fuente de 14px */
+  font-family: 'Nunito'; /* Fuente Nunito */
+  font-weight: 400; /* Peso de la fuente normal */
+  word-wrap: break-word; /* Permite que las palabras largas se partan y no desborden */
+}
+
+/* Estilos para el pie de la tarjeta */
+.footer {
+  padding: 12px; /* Padding de 12px alrededor del contenido */
+  border-radius: 8px; /* Bordes redondeados en el pie */
+  height: 40px; /* Altura del pie */
+  width: auto; /* El ancho del pie se ajusta automáticamente */
+  overflow: hidden; /* Oculta cualquier contenido que sobresalga del pie */
+  justify-content: center; /* Alinea los elementos hijos al centro verticalmente */
+  align-items: center; /* Alinea los elementos hijos al centro horizontalmente */
+  gap: 10px; /* Espacio de 10px entre los elementos dentro del pie */
+  display: inline-flex; /* Utiliza flexbox en línea para alinear los hijos */
+}
+
+/* Estilos para el texto dentro del pie */
+.footerText {
+  color: black; /* Color negro para el texto */
+  font-size: 14px; /* Tamaño de fuente de 14px */
+  font-family: 'Nunito'; /* Fuente Nunito */
+  font-weight: 700; /* Peso de la fuente en negrita */
+  word-wrap: break-word; /* Permite que las palabras largas se partan y no desborden */
+}

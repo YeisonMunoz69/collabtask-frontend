@@ -1,0 +1,35 @@
+/* Estilos para el contenedor principal */
+.contenedor {
+  border-radius: 15px; /* Bordes redondeados para el contenedor */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Sombra en todos los bordes para dar un efecto de profundidad */
+  background-color: #ffffff; /* Establece un fondo blanco para el contenedor */
+  width: auto; /* El ancho se ajusta automáticamente según el contenido */
+  height: 70vh; /* Altura del contenedor será el 70% de la altura de la ventana gráfica */
+  margin: 0px 14px 14px 18px; /* Espaciado externo (márgenes) alrededor del contenedor */
+  flex-direction: row; /* Organiza los elementos hijos en una fila dentro de un contenedor flexbox */
+  padding-bottom: 20px; /* Espaciado interno en la parte inferior del contenedor */
+  overflow-y: auto; /* Habilita el desplazamiento vertical si el contenido se desborda */
+  box-sizing: border-box; /* Incluye el borde y el padding en el cálculo total del tamaño del contenedor */
+}
+
+/* Personalizar la barra de desplazamiento para navegadores basados en WebKit (como Chrome, Safari) */
+.contenedor::-webkit-scrollbar {
+  width: 12px; /* Establece el ancho de la barra de desplazamiento */
+}
+
+.contenedor::-webkit-scrollbar-thumb {
+  background-color: #132968; /* Establece el color del "pulgar" de la barra de desplazamiento */
+  border-radius: 10px; /* Bordes redondeados en el pulgar de la barra */
+  border: 2px solid #ffffff; /* Añade un borde blanco alrededor del pulgar */
+}
+
+.contenedor::-webkit-scrollbar-track {
+  background-color: #e5e7eb; /* Establece el color de la pista (fondo) de la barra de desplazamiento */
+  border-radius: 10px; /* Bordes redondeados en la pista de la barra */
+}
+
+/* Estilos adicionales para Firefox */
+.contenedor {
+  scrollbar-width: thin; /* Establece el ancho de la barra de desplazamiento como "delgada" en Firefox */
+  scrollbar-color: #132968 #e5e7eb; /* Define los colores del pulgar y la pista en Firefox */
+}

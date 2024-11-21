@@ -1,0 +1,8 @@
+Azul Oscuro: #1F2E43
+Azul Medio: #465d7e
+Azul Claro: #132968
+Azul Grisáceo:#324853
+Blanco: #ffffff
+Gris Claro: #e5e7eb
+Gris Oscuro: #4b5563
+Gris Medio: #374151

@@ -1,0 +1,16 @@
+/* Estilos para el texto subrayado */
+.texto {
+    font-size: 22px; /* Tamaño de la fuente */
+    color: #ffffff; /* Color del texto */
+    font-family: "Nunito"; /* Familia de la fuente */
+    align-items: center; /* Alinear verticalmente el contenido */
+    display: inline-flex; /* Usar flexbox para alinear el contenido en línea */
+    gap: 10px; /* Espacio entre los elementos hijos */
+    justify-content: center; /* Centrar horizontalmente el contenido */
+    position: relative; /* Posicionamiento relativo */
+}
+
+/* Estilos para el estado hover del texto */
+.texto:hover {
+    text-decoration: underline; /* Subrayar el texto al pasar el ratón por encima */
+}

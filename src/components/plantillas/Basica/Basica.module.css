@@ -1,0 +1,29 @@
+/* Estilos para el contenedor principal */
+.contenedor {
+  display: grid; /* Utiliza el modelo de grid (rejilla) para organizar los elementos */
+  grid-template-columns: repeat(3, 1fr); /* Crea tres columnas de igual tamaño (1fr cada una) */
+  width: 100%; /* El contenedor ocupa el 100% del ancho disponible */
+  height: 100%; /* El contenedor ocupa el 100% de la altura disponible */
+}
+
+/* Estilos para la primera columna */
+.columna1 {
+  display: flex; /* Utiliza flexbox para alinear los elementos dentro de la columna */
+  align-items: center; /* Alinea los elementos verticalmente al centro */
+  justify-content: center; /* Alinea los elementos horizontalmente al centro */
+}
+
+/* Estilos para la segunda columna */
+.columna2 {
+  display: flex; /* Utiliza flexbox para alinear los elementos dentro de la columna */
+  align-items: center; /* Alinea los elementos verticalmente al centro */
+  justify-content: center; /* Alinea los elementos horizontalmente al centro */
+}
+
+/* Estilos para la tercera columna */
+.columna3 {
+  display: flex; /* Utiliza flexbox para alinear los elementos dentro de la columna */
+  align-items: center; /* Alinea los elementos verticalmente al centro */
+  justify-content: flex-end; /* Alinea los elementos horizontalmente al final de la columna */
+  padding-right: 20px; /* Añade un padding a la derecha de 20px */
+}

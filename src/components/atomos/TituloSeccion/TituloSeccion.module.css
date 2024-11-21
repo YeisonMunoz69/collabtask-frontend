@@ -1,0 +1,9 @@
+/* Estilos para el título de la sección */
+.tituloSeccion {
+    text-align: center; /* Centrar el texto */
+    margin: 20px 12px 10px 40px; /* Margen alrededor del título (arriba, derecha, abajo, izquierda) */
+    color: #324853; /* Color del texto */
+    font-family: "Nunito", Helvetica; /* Familia de la fuente */
+    font-size: 36px; /* Tamaño de la fuente */
+    cursor: default; /* Cambiar el cursor a predeterminado */
+}

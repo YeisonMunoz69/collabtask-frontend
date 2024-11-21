@@ -1,0 +1,79 @@
+.encabezado {
+  background: linear-gradient(90deg, #1F2E43, #465d7e, #1F2E43); /* Fondo con degradado */
+  height: auto; /* Altura automática */
+  position: relative; /* Posicionamiento relativo */
+  width: 100%; /* Ancho completo */
+  box-sizing: border-box; /* Incluir padding y borde en el tamaño total */
+  display: grid; /* Usar grid layout */
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+  gap: 10px; /* Espacio entre columnas */
+  padding: 9px; /* Espaciado interno */
+  cursor: default; /* Cursor predeterminado */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+.frame {
+  height: 68px; /* Altura de la imagen */
+  width: 57px; /* Ancho de la imagen */
+  transition: transform 0.5s ease;
+}
+
+.frame:hover {
+  transform: scale(1.2);
+}
+
+.textWrapper {
+  color: #ffffff; /* Color del texto */
+  font-family: "Nunito", Helvetica; /* Familia de la fuente */
+  font-size: 40px; /* Tamaño de la fuente */
+  font-weight: 700; /* Grosor de la fuente */
+  height: 55px; /* Altura del contenedor de texto */
+  letter-spacing: 1px; /* Espaciado de letras */
+  line-height: normal; /* Altura de línea normal */
+  margin-left: 10px; /* Margen izquierdo */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+}
+
+.columna1 {
+  display: flex; /* Usar flexbox */
+  align-items: center; /* Alinear verticalmente al centro */
+  justify-content: flex-start; /* Alinear horizontalmente al inicio */
+  margin-left: 8px;
+}
+
+.columna2 {
+  display: flex; /* Usar flexbox */
+  align-items: center; /* Alinear verticalmente al centro */
+  justify-content: center; /* Alinear horizontalmente al centro */
+}
+
+.columna3 {
+  display: flex; /* Usar flexbox */
+  align-items: center; /* Alinear verticalmente al centro */
+  justify-content: flex-end; /* Alinear horizontalmente al final */
+}
+
+/* Media query para pantallas más grandes */
+@media (min-width: 1024px) {
+  .encabezado {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+  .textWrapper {
+    font-size: 50px;
+  }
+}
+
+/* Media query para pantallas medianas */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .textWrapper {
+    font-size: 45px;
+  }
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 767px) {
+  .textWrapper {
+    font-size: 35px;
+  }
+}
